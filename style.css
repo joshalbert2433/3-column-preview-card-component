@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 15;
+    font-family: 'Lexend Deca', sans-serif;
+    background: hsl(0, 0%, 95%);
+}
+
+.main-wrapper {
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    /* flex-wrap: wrap; */
+    margin: 0 auto;
+
+}
+
+.content-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.content {
+    background-color: aqua;
+    max-width: 375px;
+    padding: 60px;
+}
+
+.content > *{
+    margin-top: 30px;
+}
+
+.content:nth-of-type(1){
+    background: hsl(31, 77%, 52%);
+}
+
+.content:nth-of-type(2){
+    background: hsl(184, 100%, 22%);
+}
+
+.content:nth-of-type(3){
+    background-color:hsl(179, 100%, 13%);
+}
+
+
+
+.content h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: hsl(0, 0%, 95%);
+}
+
+.content a {
+    background: hsl(0, 0%, 95%);
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: 23px;
+    margin-top: 40px;
+}   
+
+#first a {
+    color: hsl(31, 77%, 52%);
+}
+
+#second a {
+    color: hsl(184, 100%, 22%);
+}
+
+#third a {
+    color:hsl(179, 100%, 13%);
+}
+
+#first a:hover {
+    background: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    box-shadow:inset 0px 0px 0px 2px hsl(0, 0%, 95%);
+}
+
+#second a:hover {
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    box-shadow:inset 0px 0px 0px 2px hsl(0, 0%, 95%);
+}
+
+#third a:hover {
+    background: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    box-shadow:inset 0px 0px 0px 2px hsl(0, 0%, 95%);
+}
+
+#second a {
+    color: hsl(184, 100%, 22%);
+}
+
+#third a {
+    color:hsl(179, 100%, 13%);
+}
+
+.content p {
+    color: hsla(0, 0%, 100%, 0.75);
+    min-height: 130px;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .content-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .main-wrapper {
+        max-width: 375px;
+        height: auto;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .content a{
+        margin-top: 15px;
+    }
+}
